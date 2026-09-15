@@ -1,0 +1,82 @@
+.book-form-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(90, 15, 27, 0.08);
+  border: 1px solid #eadbdd;
+}
+
+.book-form-card h2 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #5a0f1b;
+  margin-bottom: 20px;
+  font-size: 21px;
+}
+
+.book-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.book-form input,
+.book-form select {
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid #d8c4c7;
+  border-radius: 7px;
+  outline: none;
+  background: #fffdf9;
+  color: #2b1a1e;
+}
+
+.book-form input:focus,
+.book-form select:focus {
+  border-color: #7b1e2b;
+  box-shadow: 0 0 0 3px rgba(123, 30, 43, 0.08);
+}
+
+.book-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  grid-column: span 2;
+  padding: 12px;
+  border: none;
+  border-radius: 7px;
+  background: #7b1e2b;
+  color: white;
+  font-weight: 600;
+}
+
+.book-form button:hover {
+  background: #5a0f1b;
+}
+
+.book-form .cancel-button {
+  background: #8c777b;
+}
+
+.book-form .cancel-button:hover {
+  background: #6e5b5f;
+}
+
+.book-form-message {
+  margin-top: 15px;
+  text-align: center;
+  color: #7b1e2b;
+  font-weight: 600;
+}
+
+@media (max-width: 650px) {
+  .book-form {
+    grid-template-columns: 1fr;
+  }
+
+  .book-form button {
+    grid-column: span 1;
+  }
+}
