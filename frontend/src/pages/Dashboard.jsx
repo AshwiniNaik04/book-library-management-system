@@ -32,7 +32,7 @@ function Dashboard() {
   const fetchBooks = async (searchText = "") => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/books?search=${encodeURIComponent(
+        `https://book-library-management-system-dcy0.onrender.com/api/books?search=${encodeURIComponent(
           searchText
         )}`
       );
@@ -70,7 +70,7 @@ function Dashboard() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/books/${id}`,
+        `https://book-library-management-system-dcy0.onrender.com/api/books/${id}`,
         {
           method: "DELETE",
         }
