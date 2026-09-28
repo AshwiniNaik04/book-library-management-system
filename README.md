@@ -2,6 +2,10 @@
 
 A full-stack web application for managing books in a library. The application provides user authentication and allows users to add, view, search, edit, update, and delete book records.
 
+## Live Demo
+
+[View Live Project](https://ashwinibook-library-management-system.netlify.app/)
+
 ## Features
 
 - User signup and login
